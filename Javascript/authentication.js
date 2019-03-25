@@ -10,8 +10,8 @@ const LOGIN_FAILED     = 'LOGIN_FAILED'
 
 const cookies = new Cookies();
 
-const LOGIN_URL = 'http://booking-api.merlin-dispatch.com/v1/authentication/login'
-const PROFILE_URL = 'http://booking-api.merlin-dispatch.com/v1/profile'
+const LOGIN_URL = '/v1/authentication/login'
+const PROFILE_URL = '/v1/profile'
 
 export function authenticationHeaders(email = null, token = null) {
   if(email === null || token === null) {

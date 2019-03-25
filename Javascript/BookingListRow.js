@@ -66,7 +66,7 @@ export default class BookingListRow extends Component {
 
   formatTime = (str) => {
     const date = new Date(str)
-    const time = date.toLocaleTimeString('en-UK', { hour: 'numeric', minute: 'numeric', hour12: true }) 
+    const time = date.toLocaleTimeString('en-UK', { hour: 'numeric', minute: 'numeric', hour12: true })
     return [date.toLocaleDateString(), time].join(' ')
   }
 

@@ -9,14 +9,14 @@ const CREATE_BOOKING      = 'CREATE_BOOKING'
 const UPDATE_BOOKING      = 'UPDATE_BOOKING'
 const SET_ALL_BOOKINGS    = 'SET_ALL_BOOKINGS'
 
-const ACTIVE_BOOKINGS_URL = 'http://booking-api.merlin-dispatch.com/v1/orders/active'
-const QUOTE_URL           = 'http://booking-api.merlin-dispatch.com/v1/orders/quote'
-const BOOKING_URL         = 'http://booking-api.merlin-dispatch.com/v1/orders'
-const ROUTING_URL         = 'http://booking-api.merlin-dispatch.com/v1/directions'
+const ACTIVE_BOOKINGS_URL = '/v1/orders/active'
+const QUOTE_URL           = '/v1/orders/quote'
+const BOOKING_URL         = '/v1/orders'
+const ROUTING_URL         = '/v1/directions'
 
 export async function fetchQuote(booking, callback) {
   if(booking.tasks.length < 2) return;
-  
+
   const headers = authenticationHeaders()
   const data    = { order: booking }
 

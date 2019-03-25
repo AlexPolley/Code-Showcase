@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './LoginScene.css'
-import RicoLogo from '../../assets/rico-logo.png'
+import RicoLogo from '../../assets/logo.png'
 import { submitLoginCredentials } from '../../redux/authentication'
 import { store } from '../../index'
 import { connect } from 'react-redux'
