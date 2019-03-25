@@ -1,0 +1,24 @@
+.BookingListSearchBar {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px lightgrey;
+
+  input[type='text'] {
+    flex-grow: 1;
+    outline: none;
+    height: 30px;
+    border: none;
+    margin-left: 5px;
+    background-color: none;
+
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+}

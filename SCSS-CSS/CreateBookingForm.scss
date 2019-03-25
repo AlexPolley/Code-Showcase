@@ -1,0 +1,156 @@
+.CreateBookingForm {
+  background-color: #FBFBFB;
+  display:flex;
+  flex-direction: column;
+  overflow: scroll;
+  padding-bottom: 40px;
+  
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+
+  .react-datetime-picker__wrapper {
+    border: none !important;
+
+    .react-datetime-picker__inputGroup__year {
+      margin-right: 25px !important;
+    }
+
+    input {
+      outline: none !important;
+    }
+
+    select {
+      margin-left: 10px !important;
+    }
+
+    button {
+      outline: none;
+      margin-left: 20px;
+    }
+  }
+
+  .scheduled {
+    margin: 12px 0px;
+
+    button {
+      margin-right: 10px;
+      width: 120px;
+      height: 32px;
+      border: solid 1.2px rgba(0,0,0,0.4);
+      color: rgba(0,0,0,0.4);
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+
+      &.active {
+        color: #38466C;
+        font-weight: bold;
+        border-color: #38466C;
+      }
+    }
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 100px auto;
+    padding: 25px;
+    padding-bottom: 0px;
+    font-family: 'Titillium Web', sans-serif;
+
+    h2 {
+      font-size: 10pt;
+      font-weight: 600;
+      margin: 0px;
+      color: #3D3F4F;
+    }
+
+    .boxy {
+      background-color: white;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 20px 10px 20px;
+      margin-bottom: 20px;
+      max-width: 540px;
+
+      -webkit-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.1);
+      box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.1);
+    }
+
+    label {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #3D3F4F;
+    }
+
+    input[type="text"], select {
+      margin: 10px 0px 20px 0px;
+      height: 25px;
+      background-color: white;
+      outline: none;
+      border: solid 1px #D1D1D1;
+      border-radius: 3px;
+      padding-left: 10px;
+      outline: none;
+    }
+
+    select {
+      height: 30px;
+    }
+  }
+
+  .quote {
+    position: absolute;
+    left: 720px;
+    bottom: 20px;
+    width: 420px;
+    padding: 15px;
+    z-index: 4;
+    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.1);
+
+    h2 {
+      color: #717171;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-size: 14pt;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 9pt;
+      margin: 5px 0px;
+
+      span {
+        color: #4BACDC;
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .submit {
+    background-color: #CECB6C;
+    text-align: center;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &.inactive {
+      background-color: lightgray;
+    }
+
+    h2 {
+      line-height: 40px;
+      color: white;
+      font-size: 12pt;
+      font-weight: 400;
+    }
+  }
+}
